@@ -6,6 +6,16 @@
     android:gravity="center"
     android:orientation="vertical">
 
+    <ImageButton
+        android:id="@+id/btnSom"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:src="@drawable/ic_som_on"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:padding="8dp"/>
+
     <TextView
         android:id="@+id/txtResultado"
         android:layout_width="wrap_content"
