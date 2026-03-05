@@ -2,6 +2,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- PERMISSÃO PARA VIBRAR -->
+    <uses-permission android:name="android.permission.VIBRATE"/>
+
+    <!-- PERMISSÃO PARA USAR A LANTERNA -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"

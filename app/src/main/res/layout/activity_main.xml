@@ -22,10 +22,23 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:background="#99FFFFFF"
-        android:text="Escolha uma opção"
+        android:text="Bem-vindo ao Jokenpô!"
         android:textAlignment="center"
         android:textSize="24sp"
         android:textStyle="bold" />
+
+    <!-- ADICIONADO - IMAGEM DA JOGADA DO ANDROID -->
+    <ImageView
+        android:id="@+id/imgAndroid"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/pedra"
+        android:contentDescription="Jogada do Android"
+        android:scaleType="fitCenter"/>
+
+    <!-- ADICIONADO: inicia invisível -->
+    android:visibility="invisible"/>
 
     <LinearLayout
         android:orientation="horizontal"
