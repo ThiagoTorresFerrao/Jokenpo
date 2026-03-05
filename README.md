@@ -2,208 +2,255 @@
 
 ## 🇧🇷 Sobre o Projeto
 
-Este projeto consiste em um aplicativo Android do clássico jogo **Pedra, Papel e Tesoura (Jokenpô)**, desenvolvido utilizando **Kotlin** no **Android Studio**.
+Este projeto consiste em um aplicativo Android do clássico jogo **Pedra,
+Papel e Tesoura (Jokenpô)**, desenvolvido utilizando **Kotlin** no
+**Android Studio**.
 
-🎯 **Objetivo principal:**
-Este projeto foi criado por mim com finalidade educacional, sendo utilizado para ensinar os **fundamentos de desenvolvimento Android com Kotlin** para os alunos do **SENAC – turma 2026.1**.
+🎯 **Objetivo principal:**\
+Este projeto foi criado por **Thiago Torres** com finalidade educacional
+e é utilizado para ensinar os **fundamentos de desenvolvimento Android
+com Kotlin** para os alunos do **SENAC -- turma 2026.1**.
 
-Mais do que um simples jogo, este projeto serve como base prática para introduzir conceitos essenciais de programação mobile.
+Mais do que um simples jogo, este projeto serve como **base prática para
+introduzir conceitos essenciais de programação mobile**, incluindo
+interação com hardware do dispositivo e feedback visual e sonoro.
 
----
+------------------------------------------------------------------------
 
-## 🚀 O que os alunos aprendem com este projeto
+# 🎮 Demonstração do Jogo
 
-- Estrutura de um projeto Android
-- Uso de **Activities**
-- Manipulação de componentes de interface (UI)
-- Trabalhando com **eventos de clique**
-- Lógica de programação aplicada
-- Uso de **Random (aleatoriedade)**
-- Atualização dinâmica da interface
-- Organização de código Kotlin
+O jogador escolhe entre:
 
----
+✊ Pedra\
+✋ Papel\
+✌️ Tesoura
 
-## 🛠️ Tecnologias Utilizadas
+O Android realiza uma escolha aleatória e o resultado é exibido na tela.
 
-- Kotlin
-- Android Studio
-- XML (Layouts)
-- Android SDK
+Durante a jogada o jogo inclui:
 
----
+-   Delay simulando o "pensamento" do Android
+-   Animação das mãos
+-   Feedback visual do resultado
+-   Sons de vitória, derrota e empate
+-   Vibração do dispositivo ao perder
+-   Piscar da lanterna ao vencer
 
-## 📁 Estrutura do Projeto
+Esses recursos tornam o projeto **mais interativo e realista para fins
+educacionais**.
 
-```
-Jokenpo/
-├── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/example/jokenpo/
-│   │   │   │   └── MainActivity.kt
-│   │   │   ├── res/
-│   │   │   │   ├── layout/
-│   │   │   │   │   └── activity_main.xml
-│   │   │   │   ├── drawable/
-│   │   │   │   ├── mipmap/
-│   │   │   │   └── values/
-│   │   │   └── AndroidManifest.xml
-├── build.gradle
-└── settings.gradle
-```
+------------------------------------------------------------------------
+
+# 🚀 O que os alunos aprendem com este projeto
+
+Este projeto é utilizado em sala de aula para ensinar:
+
+-   Estrutura de um projeto Android
+-   Uso de **Activities**
+-   Manipulação de **componentes de interface (UI)**
+-   Trabalhar com **eventos de clique**
+-   Lógica de programação aplicada
+-   Uso de **Random (aleatoriedade)**
+-   Atualização dinâmica da interface
+-   Organização de código Kotlin
+-   Manipulação de **imagens e layouts**
+-   Uso de **Handlers e Delay**
+-   Controle de **visibilidade de elementos**
+-   Integração com **hardware do dispositivo (vibração e flash)**
+
+------------------------------------------------------------------------
+
+# ⚡ Funcionalidades do Aplicativo
+
+O aplicativo possui diversas funcionalidades implementadas para
+enriquecer a experiência do usuário:
+
+### 🎮 Jogabilidade
+
+-   Escolha entre Pedra, Papel ou Tesoura
+-   Jogada do computador gerada aleatoriamente
+-   Exibição do resultado (vitória, derrota ou empate)
+
+### 🎨 Interface e Experiência
+
+-   Interface simples e intuitiva
+-   Animação das mãos durante o "pensamento" do Android
+-   Revelação da jogada do Android com animação
+-   Exibição simultânea da jogada do jogador e do Android
+-   Reset automático da interface após cada rodada
+
+### 🔊 Feedback Multimídia
+
+-   Sons personalizados para vitória, derrota e empate
+-   Música de fundo durante o jogo
+-   Botão para **ativar ou desativar o som**
+
+### 📳 Interação com Hardware
+
+-   **Vibração do dispositivo ao perder**
+-   **Piscar da lanterna ao vencer**
+
+Esses recursos permitem apresentar aos alunos exemplos práticos de
+**interação com recursos nativos do Android**.
+
+------------------------------------------------------------------------
+
+# 🛠️ Tecnologias Utilizadas
+
+-   **Kotlin**
+-   **Android Studio**
+-   **Android SDK**
+-   **XML (Layouts)**
+-   **MediaPlayer (sons e música)**
+-   **CameraManager (lanterna)**
+-   **Vibrator API**
+-   **ObjectAnimator (animações)**
+
+------------------------------------------------------------------------
+
+# 📁 Estrutura do Projeto
+
+    Jokenpo/
+    ├── app/
+    │   ├── src/
+    │   │   ├── main/
+    │   │   │   ├── java/com/example/jokenpo/
+    │   │   │   │   └── MainActivity.kt
+    │   │   │   ├── res/
+    │   │   │   │   ├── layout/
+    │   │   │   │   │   └── activity_main.xml
+    │   │   │   │   ├── drawable/
+    │   │   │   │   ├── raw/
+    │   │   │   │   ├── mipmap/
+    │   │   │   │   └── values/
+    │   │   │   └── AndroidManifest.xml
+    ├── build.gradle
+    └── settings.gradle
 
 📌 **Descrição:**
-- `MainActivity.kt`: lógica principal do jogo  
-- `activity_main.xml`: interface do usuário  
-- `drawable/`: imagens do jogo (pedra, papel, tesoura)  
-- `values/`: cores, strings e estilos  
 
----
+-   `MainActivity.kt` → lógica principal do jogo\
+-   `activity_main.xml` → interface do usuário\
+-   `drawable/` → imagens das mãos do jogo\
+-   `raw/` → arquivos de áudio utilizados no app\
+-   `values/` → cores, strings e estilos
 
-## 📱 Funcionalidades
+------------------------------------------------------------------------
 
-- Escolha entre Pedra, Papel ou Tesoura
-- Jogada do computador gerada aleatoriamente
-- Exibição do resultado (vitória, derrota ou empate)
-- Interface simples e intuitiva
-- Feedback visual para o usuário
+# 📚 Contexto Educacional
 
----
-
-## 📚 Contexto Educacional
-
-Este projeto foi aplicado em sala de aula como uma atividade prática para reforçar conceitos iniciais de desenvolvimento Android.
+Este projeto foi aplicado em sala de aula como **atividade prática de
+introdução ao desenvolvimento Android**.
 
 💡 A proposta é permitir que os alunos:
-- Entendam na prática como funciona um app
-- Desenvolvam raciocínio lógico
-- Ganhem confiança com Kotlin
-- Criem seus primeiros projetos reais
 
----
+-   Entendam na prática como funciona um aplicativo mobile
+-   Desenvolvam **raciocínio lógico**
+-   Aprendam conceitos fundamentais de **Kotlin**
+-   Trabalhem com **UI Android**
+-   Criem seus primeiros projetos reais
 
-## ▶️ Como executar o projeto
+Esse tipo de projeto ajuda os alunos a **ganhar confiança para evoluir
+para aplicações mais complexas**.
 
-```bash
+------------------------------------------------------------------------
+
+# ▶️ Como executar o projeto
+
+Clone o repositório:
+
+``` bash
 git clone https://github.com/ThiagoTorresFerrao/Jokenpo.git
 ```
 
-1. Abra no **Android Studio**  
-2. Execute em um emulador ou dispositivo físico  
+Abra no **Android Studio** e execute em:
 
----
+-   📱 Dispositivo físico
+-   🤖 Emulador Android
 
-## 👨‍🏫 Autor
+------------------------------------------------------------------------
 
-Desenvolvido por **Thiago Torres**  
-Professor e Desenvolvedor apaixonado por tecnologia e ensino.
+# 💡 Possíveis Melhorias Futuras
 
----
+Este projeto pode ser expandido para ensinar novos conceitos:
 
----
+-   Sistema de **placar (Player vs Android)**
+-   Animação estilo **"JO-KEN-PÔ"**
+-   Multiplayer local
+-   Persistência de dados
+-   Integração com APIs
+-   Publicação na **Google Play Store**
+
+------------------------------------------------------------------------
+
+# 👨‍🏫 Autor
+
+Desenvolvido por **Thiago Torres**
+
+Professor e desenvolvedor apaixonado por tecnologia e ensino.
+
+------------------------------------------------------------------------
 
 # 🇺🇸 About the Project
 
-This project is an Android application of the classic **Rock, Paper, Scissors (Jokenpo)** game, developed using **Kotlin** in **Android Studio**.
+This project is an Android application of the classic **Rock, Paper,
+Scissors (Jokenpo)** game developed using **Kotlin** in **Android
+Studio**.
 
-🎯 **Main purpose:**
-This project was created by me for educational purposes, to teach **Android development fundamentals with Kotlin** to students from **SENAC – class 2026.1**.
+🎯 **Main purpose:**\
+The project was created for educational purposes to teach **Android
+development fundamentals** to **SENAC students (Class 2026.1)**.
 
-More than just a game, this project acts as a practical foundation for beginners in mobile development.
+More than just a game, it works as a **hands‑on introduction to mobile
+development concepts**.
 
----
+------------------------------------------------------------------------
 
-## 🚀 What students learn from this project
+# 🚀 What Students Learn
 
-- Android project structure
-- Working with **Activities**
-- UI components handling
-- Click event handling
-- Programming logic in practice
-- Using **randomization**
-- Dynamic UI updates
-- Kotlin code organization
+Students learn important Android concepts such as:
 
----
+-   Android project structure
+-   Activities
+-   UI component manipulation
+-   Click event handling
+-   Random game logic
+-   Dynamic UI updates
+-   Kotlin code organization
+-   Animations and visual feedback
+-   Device hardware interaction (vibration and flashlight)
 
-## 🛠️ Technologies Used
+------------------------------------------------------------------------
 
-- Kotlin
-- Android Studio
-- XML (Layouts)
-- Android SDK
+# 📱 App Features
 
----
+-   Rock, Paper, Scissors gameplay
+-   Random computer move
+-   Animated UI feedback
+-   Sound effects and background music
+-   Device vibration when losing
+-   Flashlight blinking when winning
+-   Automatic round reset
+-   Interactive and beginner-friendly design
 
-## 📁 Project Structure
+------------------------------------------------------------------------
 
-```
-Jokenpo/
-├── app/
-│   ├── src/
-│   │   ├── main/
-│   │   │   ├── java/com/example/jokenpo/
-│   │   │   │   └── MainActivity.kt
-│   │   │   ├── res/
-│   │   │   │   ├── layout/
-│   │   │   │   │   └── activity_main.xml
-│   │   │   │   ├── drawable/
-│   │   │   │   ├── mipmap/
-│   │   │   │   └── values/
-│   │   │   └── AndroidManifest.xml
-├── build.gradle
-└── settings.gradle
-```
+# 🛠️ Technologies
 
-📌 **Description:**
-- `MainActivity.kt`: main game logic  
-- `activity_main.xml`: user interface  
-- `drawable/`: game images (rock, paper, scissors)  
-- `values/`: colors, strings, and styles  
+-   Kotlin
+-   Android Studio
+-   Android SDK
+-   XML Layouts
+-   MediaPlayer
+-   Vibrator API
+-   CameraManager API
+-   ObjectAnimator
 
----
+------------------------------------------------------------------------
 
-## 📱 Features
+# ⭐ Final Note
 
-- Choose between Rock, Paper or Scissors
-- Computer move generated randomly
-- Result display (win, lose, or draw)
-- Simple and intuitive interface
-- Visual feedback to the user
+Feel free to explore, modify, and improve this project.
 
----
-
-## 📚 Educational Context
-
-This project was used in the classroom as a hands-on activity to reinforce beginner Android development concepts.
-
-💡 The goal is to help students:
-- Understand how real apps work
-- Improve logical thinking
-- Gain confidence with Kotlin
-- Build their first real-world projects
-
----
-
-## ▶️ How to run the project
-
-```bash
-git clone https://github.com/ThiagoTorresFerrao/Jokenpo.git
-```
-
-1. Open it in **Android Studio**  
-2. Run on emulator or physical device  
-
----
-
-## 👨‍🏫 Author
-
-Developed by **Thiago Torres**  
-Professor and Developer passionate about technology and teaching.
-
----
-
-## ⭐ Final Note
-
-Feel free to explore, modify, and improve this project. Learning by building is the best way to grow 🚀
+Learning by building real projects is one of the best ways to grow as a
+developer 🚀
